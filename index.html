@@ -1,245 +1,818 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Keval Gajjar | Senior iOS Developer &amp; Mobile Team Lead</title>
-<meta name="description" content="Keval Gajjar: Senior iOS Developer and Mobile Team Lead with 11+ years of experience in Swift, SwiftUI, UIKit and React Native. Ahmedabad, India.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&family=Sora:wght@500;700;800&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#eef4f2;--panel:#fff;--ink:#10262b;--muted:#4b6369;--line:#cddcd8;--accent:#0a6c74;--hot:#c93d1f;--tint:#dcebe8;--d:"Sora",system-ui,sans-serif;--b:"Public Sans",system-ui,sans-serif}
-@media (prefers-color-scheme:dark){:root{--bg:#0d1f23;--panel:#132a2f;--ink:#e6f0ee;--muted:#9db5b3;--line:#25444a;--accent:#5cc7c9;--hot:#ff8a65;--tint:#1a363c}}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:70px}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 var(--b)}
-a{color:var(--accent)}
-a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.top{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
-.top div{max-width:1000px;margin:0 auto;padding:14px 24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.top b{font:800 1.05rem var(--d)}
-.top nav{display:flex;gap:18px;flex-wrap:wrap}
-.top nav a{text-decoration:none;color:var(--muted);font-weight:500;font-size:.95rem}
-.top nav a:hover{color:var(--accent)}
-main{max-width:1000px;margin:0 auto;padding:0 24px}
-.hero{padding:72px 0 48px}
-h1{font:800 clamp(3rem,9vw,6.5rem)/.95 var(--d);letter-spacing:-.04em;margin:0 0 24px}
-.hero .lede{font-size:1.25rem;max-width:44ch;margin:0 0 28px;color:var(--muted)}
-.btns{display:flex;flex-wrap:wrap;gap:10px}
-.btn{display:inline-block;padding:10px 20px;border-radius:999px;border:2px solid var(--accent);text-decoration:none;font-weight:500}
-.btn.p{background:var(--accent);color:var(--bg)}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;margin:48px 0 0;border:1px solid var(--line);border-radius:12px;background:var(--panel);overflow:hidden}
-.stats div{padding:18px 20px;border-right:1px solid var(--line)}
-.stats div:last-child{border:0}
-.stats b{display:block;font:800 1.9rem/1.1 var(--d);color:var(--hot)}
-.stats span{color:var(--muted);font-size:.9rem}
-section{padding:56px 0 8px}
-h2{font:800 clamp(1.6rem,3.5vw,2.2rem)/1.15 var(--d);letter-spacing:-.02em;margin:0 0 24px}
-h3{font:700 1.15rem/1.3 var(--d);margin:0}
-p{margin:0 0 14px}
-ul.pts{margin:8px 0 0;padding-left:1.1em}
-ul.pts li{margin-bottom:6px}
-.ach{display:grid;gap:14px;padding:0;margin:0;list-style:none}
-.ach li{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:14px 18px}
-.tl{border-left:2px solid var(--line);margin-left:6px;padding-left:28px}
-.job{position:relative;padding-bottom:30px}
-.job::before{content:"";position:absolute;left:-37px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
-.job time{display:block;color:var(--hot);font-weight:500;font-size:.92rem;margin-bottom:2px}
-.job .co{color:var(--muted);margin:2px 0 0}
-details.proj{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin-bottom:14px}
-details.proj summary{cursor:pointer;padding:18px 22px;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:baseline;flex-wrap:wrap}
-details.proj summary::-webkit-details-marker{display:none}
-details.proj summary::after{content:"+";font:700 1.4rem var(--d);color:var(--accent);margin-left:auto}
-details.proj[open] summary::after{content:"\2212"}
-.sub{color:var(--muted);font-size:.9rem;width:100%}
-.pb{padding:0 22px 20px}
-.meta{display:flex;flex-wrap:wrap;gap:4px 20px;color:var(--muted);font-size:.9rem;margin:0 0 8px}
-.tags{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 0;padding:0;list-style:none}
-.tags li{background:var(--tint);border-radius:6px;padding:2px 10px;font-size:.85rem}
-.lk{margin:12px 0 0;font-weight:500}
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
-.sk{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
-.sk h3{font-size:1rem;margin-bottom:6px;color:var(--accent)}
-.sk p{margin:0;color:var(--muted);font-size:.95rem}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.big a{font:800 clamp(1.3rem,3.5vw,2.1rem) var(--d);word-break:break-all}
-footer{padding:48px 0 56px;color:var(--muted);font-size:.9rem}
-@media (max-width:700px){.two{grid-template-columns:1fr}.stats div{border-right:0;border-bottom:1px solid var(--line)}.tl{padding-left:22px}.job::before{left:-31px}}
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Keval Gajjar | Senior iOS Developer &amp; Mobile Team Lead</title>
+    <meta name="description"
+        content="Keval Gajjar: Senior iOS Developer and Mobile Team Lead with 11+ years of experience in Swift, SwiftUI, UIKit, and React Native. Based in Ahmedabad, India.">
+    <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Sora:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg: #eef4f2;
+            --panel: #ffffff;
+            --ink: #10262b;
+            --muted: #4b6369;
+            --line: #cddcd8;
+            --accent: #0a6c74;
+            --accent-hover: #074e54;
+            --hot: #c93d1f;
+            --tint: #dcebe8;
+            --d: "Sora", system-ui, -apple-system, sans-serif;
+            --b: "Public Sans", system-ui, -apple-system, sans-serif;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0d1f23;
+                --panel: #132a2f;
+                --ink: #e6f0ee;
+                --muted: #9db5b3;
+                --line: #25444a;
+                --accent: #5cc7c9;
+                --accent-hover: #7ee0e2;
+                --hot: #ff8a65;
+                --tint: #1a363c;
+            }
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--bg);
+            color: var(--ink);
+            font: 400 17px/1.65 var(--b);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--accent);
+            text-underline-offset: 3px;
+        }
+
+        a:hover {
+            color: var(--accent-hover);
+        }
+
+        a:focus-visible,
+        summary:focus-visible {
+            outline: 3px solid var(--accent);
+            outline-offset: 3px;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 20px;
+            background: var(--accent);
+            color: var(--panel);
+            padding: 8px 16px;
+            border-radius: 4px;
+            z-index: 100;
+            text-decoration: none;
+        }
+
+        .skip-link:focus {
+            top: 16px;
+        }
+
+        .top {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            background-color: var(--bg);
+            border-bottom: 1px solid var(--line);
+            backdrop-filter: blur(8px);
+        }
+
+        .top div {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 14px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .top b {
+            font: 800 1.1rem var(--d);
+        }
+
+        .top nav {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .top nav a {
+            text-decoration: none;
+            color: var(--muted);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .top nav a:hover {
+            color: var(--accent);
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .hero {
+            padding: 72px 0 48px;
+        }
+
+        h1 {
+            font: 800 clamp(2.8rem, 8vw, 5.5rem)/1 var(--d);
+            letter-spacing: -0.04em;
+            margin: 0 0 24px;
+        }
+
+        .hero .lede {
+            font-size: 1.25rem;
+            max-width: 46ch;
+            margin: 0 0 28px;
+            color: var(--muted);
+        }
+
+        .btns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 22px;
+            border-radius: 999px;
+            border: 2px solid var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .btn:hover {
+            border-color: var(--accent-hover);
+        }
+
+        .btn.p {
+            background: var(--accent);
+            color: var(--bg);
+        }
+
+        .btn.p:hover {
+            background: var(--accent-hover);
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            margin: 48px 0 0;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            background: var(--panel);
+            overflow: hidden;
+        }
+
+        .stats div {
+            padding: 20px;
+            border-right: 1px solid var(--line);
+        }
+
+        .stats div:last-child {
+            border-right: none;
+        }
+
+        .stats b {
+            display: block;
+            font: 800 2rem/1.1 var(--d);
+            color: var(--hot);
+        }
+
+        .stats span {
+            color: var(--muted);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        section {
+            padding: 56px 0 12px;
+        }
+
+        h2 {
+            font: 800 clamp(1.6rem, 3.5vw, 2.2rem)/1.15 var(--d);
+            letter-spacing: -0.02em;
+            margin: 0 0 24px;
+        }
+
+        h3 {
+            font: 700 1.2rem/1.3 var(--d);
+            margin: 0;
+        }
+
+        p {
+            margin: 0 0 16px;
+        }
+
+        ul.pts {
+            margin: 8px 0 0;
+            padding-left: 1.2em;
+        }
+
+        ul.pts li {
+            margin-bottom: 8px;
+        }
+
+        .ach {
+            display: grid;
+            gap: 14px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .ach li {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 16px 20px;
+        }
+
+        .tl {
+            border-left: 2px solid var(--line);
+            margin-left: 8px;
+            padding-left: 28px;
+        }
+
+        .job {
+            position: relative;
+            padding-bottom: 36px;
+        }
+
+        .job:last-child {
+            padding-bottom: 8px;
+        }
+
+        .job::before {
+            content: "";
+            position: absolute;
+            left: -35px;
+            top: 6px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent);
+            border: 3px solid var(--bg);
+        }
+
+        .job time {
+            display: block;
+            color: var(--hot);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 4px;
+        }
+
+        .job .co {
+            color: var(--muted);
+            font-weight: 500;
+            margin: 2px 0 8px;
+        }
+
+        details.proj {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            margin-bottom: 16px;
+            overflow: hidden;
+        }
+
+        details.proj summary {
+            cursor: pointer;
+            padding: 20px 24px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        details.proj summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details.proj summary::after {
+            content: "+";
+            font: 700 1.4rem var(--d);
+            color: var(--accent);
+            margin-left: auto;
+        }
+
+        details.proj[open] summary::after {
+            content: "−";
+        }
+
+        .sub {
+            color: var(--muted);
+            font-size: 0.92rem;
+            width: 100%;
+            margin-top: 4px;
+        }
+
+        .pb {
+            padding: 0 24px 24px;
+        }
+
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 20px;
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin: 0 0 12px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin: 16px 0 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .tags li {
+            background: var(--tint);
+            border-radius: 6px;
+            padding: 4px 10px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .lk {
+            margin: 16px 0 0;
+            font-weight: 600;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+        }
+
+        .sk {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            padding: 18px 20px;
+        }
+
+        .sk h3 {
+            font-size: 1rem;
+            margin-bottom: 6px;
+            color: var(--accent);
+        }
+
+        .sk p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .two {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+        }
+
+        .big a {
+            font: 800 clamp(1.2rem, 3.2vw, 1.8rem) var(--d);
+            word-break: break-word;
+        }
+
+        footer {
+            padding: 48px 0 56px;
+            color: var(--muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--line);
+            margin-top: 48px;
+        }
+
+        @media (max-width: 700px) {
+            .two {
+                grid-template-columns: 1fr;
+            }
+
+            .stats div {
+                border-right: 0;
+                border-bottom: 1px solid var(--line);
+            }
+
+            .tl {
+                padding-left: 20px;
+                margin-left: 4px;
+            }
+
+            .job::before {
+                left: -27px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<div class="top"><div><b>Keval Gajjar</b>
-<nav aria-label="Main"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></nav></div></div>
+    <a href="#main" class="skip-link">Skip to main content</a>
 
-<main>
-<div class="hero">
-<h1>Keval Gajjar</h1>
-<p class="lede">Senior iOS Developer and Mobile Team Lead. I build and lead native iOS and React Native products, from architecture to App Store release.</p>
-<div class="btns">
-<a class="btn p" href="mailto:kevalunchadiya92@gmail.com">Email me</a>
-<a class="btn" href="https://github.com/kevalgajjar111">GitHub</a>
-<a class="btn" href="https://linkedin.com/in/keval-gajjar">LinkedIn</a>
-</div>
-<div class="stats">
-<div><b>11+</b><span>years in engineering</span></div>
-<div><b>10+</b><span>years native iOS</span></div>
-<div><b>15+</b><span>apps shipped</span></div>
-<div><b>8–12</b><span>developers led</span></div>
-<div><b>30%</b><span>shorter sprints with AI tools</span></div>
-</div>
-</div>
+    <header class="top">
+        <div>
+            <b>Keval Gajjar</b>
+            <nav aria-label="Main Navigation">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-<section id="about">
-<h2>About</h2>
-<p>I'm a senior iOS developer and mobile team lead in Ahmedabad, India. I have 11+ years in software engineering: 10+ in native iOS (Swift, SwiftUI, UIKit, Combine, Objective-C) and 1.5 in React Native.</p>
-<p>I've shipped 15+ native iOS apps and cross-platform React Native products in healthtech, fintech, e-commerce and IoT/BLE, using MVVM, VIPER, Clean Architecture and SOLID principles. I'm comfortable with Swift Concurrency, GCD, XCTest/TDD and profiling with Instruments.</p>
-<p>I was an early adopter of agentic AI in mobile engineering, using Cursor, Kiro, GitHub Copilot, Amazon Q Developer and Claude Code for code generation, refactoring, debugging, unit tests and documentation. I've led teams of 8–12 developers through the full SDLC in Agile environments.</p>
-<h3 style="margin:28px 0 14px">Key achievements</h3>
-<ul class="ach">
-<li>Led adoption of agentic AI workflows across engineering teams, cutting sprint cycle times by 30% and expanding automated test coverage.</li>
-<li>Led and mentored cross-functional teams across iOS, Android, Flutter and React Native, assigning work by priority and expertise to hit delivery dates.</li>
-<li>Shipped 15+ native iOS apps and React Native products to the App Store and Play Store.</li>
-<li>Built offline-first sync frameworks that kept data intact for field teams with poor connectivity, and delivered apps rated 4.8 and 5.0 on the App Store.</li>
-<li>Improved stability and crash-free sessions with Crashlytics, Instruments memory profiling and careful ARC management.</li>
-<li>Scaled consumer apps to real reach: a language-learning app with 400,000+ learners in 15 languages, and a ride-hailing app rated 4.8 across 5,500+ reviews.</li>
-</ul>
-</section>
+    <main id="main">
+        <section class="hero">
+            <h1>Keval Gajjar</h1>
+            <p class="lede">Senior iOS Developer and Mobile Team Lead. Building scalable native iOS and React Native
+                applications from architecture to App Store delivery.</p>
+            <div class="btns">
+                <a class="btn p" href="mailto:kevalunchadiya92@gmail.com">Email Me</a>
+                <a class="btn" href="https://github.com/kevalgajjar111" target="_blank"
+                    rel="noopener noreferrer">GitHub</a>
+                <a class="btn" href="https://linkedin.com/in/keval-gajjar" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+            </div>
+            <div class="stats">
+                <div><b>11+</b><span>years engineering</span></div>
+                <div><b>10+</b><span>years native iOS</span></div>
+                <div><b>15+</b><span>shipped apps</span></div>
+                <div><b>8–12</b><span>engineers led</span></div>
+                <div><b>30%</b><span>faster sprint cycles</span></div>
+            </div>
+        </section>
 
-<section id="experience">
-<h2>Experience</h2>
-<div class="tl">
-<div class="job"><time>May 2025 – Present</time><h3>Senior iOS Developer</h3><p class="co">Silicon IT Hub Pvt. Ltd.</p>
-<ul class="pts">
-<li>Directing the move of enterprise mobile apps from monolithic structures to modular Swift and React Native micro-frontends, for better scalability and parallel team work.</li>
-<li>Introduced agentic AI and LLM-assisted code generation (Kiro, Cursor AI): 30% shorter sprints and much higher unit test coverage through generated test suites.</li>
-<li>Build cross-platform React Native apps with reusable TypeScript/Hooks components, REST integration, Redux state, and AsyncStorage-backed offline sync.</li>
-<li>Reduced unnecessary re-renders and streamlined navigation, working with UI/UX, backend, QA and PM through Scrum ceremonies.</li>
-</ul></div>
-<div class="job"><time>Oct 2024 – Mar 2025</time><h3>Mobile App Team Lead</h3><p class="co">Youngbrainz Infotech</p>
-<ul class="pts">
-<li>Led 8–12 mobile developers: sprint planning, task allocation, code reviews and on-time delivery across iOS and React Native.</li>
-<li>Architected iOS apps in Swift, SwiftUI and Objective-C with MVVM, VIPER and Clean Architecture, and built React Native screens with optimized FlatList rendering and custom bridge modules.</li>
-<li>Delivered BLE, Firebase, push notifications, in-app purchases, location and camera features, and tuned performance with Instruments and crash analysis.</li>
-<li>Migrated legacy Objective-C modules to Swift, owned the App Store release cycle (CI/CD, provisioning, TestFlight), and set coding standards, interviews and mentoring.</li>
-</ul></div>
-<div class="job"><time>Apr 2024 – Sep 2024</time><h3>Senior iOS Developer</h3><p class="co">IOTTIVE OPC Pvt. Ltd.</p>
-<ul class="pts">
-<li>Owned delivery of native iOS apps in VIPER, lowering regression risk and keeping release cycles predictable.</li>
-<li>Built CoreBluetooth communication layers for wearables: firmware negotiation, packet fragmentation, CRC validation and auto-reconnect.</li>
-</ul></div>
-<div class="job"><time>Sep 2021 – Mar 2024</time><h3>Senior iOS Developer</h3><p class="co">Brightforce Technologies (formerly Plutus Technologies)</p>
-<ul class="pts">
-<li>Took ownership of a white-label community platform and scaled it to a multi-client, multi-brand model, extending offline-first sync (Core Data, background context merging, conflict resolution) with 100% data integrity.</li>
-<li>Worked with product and QA leads on release planning, sprint reviews and demos, and ran App Store submissions and TestFlight betas.</li>
-</ul></div>
-<div class="job"><time>Sep 2016 – Aug 2021</time><h3>iOS Developer</h3><p class="co">Stalwart IT Solution</p>
-<ul class="pts">
-<li>Designed and built the first version of the white-label community platform, with dynamic branding, real-time construction tracking and the offline-first architecture it later scaled on.</li>
-<li>Led and mentored 3–4 developers from onboarding to independently shipping client features.</li>
-</ul></div>
-<div class="job"><time>Jan 2015 – Aug 2016</time><h3>iOS Trainee / Jr iOS Developer</h3><p class="co">iMOBDEV Technologies Pvt. Ltd.</p>
-<ul class="pts"><li>Built native iOS apps with responsive UI across screen sizes and iOS versions, and learned Swift and Objective-C.</li></ul></div>
-</div>
-</section>
+        <section id="about">
+            <h2>About</h2>
+            <p>Senior iOS Developer and Mobile Team Lead based in Ahmedabad, India, with over 11 years of engineering
+                experience across native iOS (Swift, SwiftUI, UIKit, Combine, Objective-C) and cross-platform React
+                Native.</p>
+            <p>Shipped 15+ production apps across healthtech, fintech, e-commerce, and IoT/BLE domains. Architecture
+                expertise spans MVVM, VIPER, Clean Architecture, Swift Concurrency, Core Data, and performance
+                optimization via Instruments.</p>
+            <p>Experienced in integrating modern agentic AI tooling (Cursor, GitHub Copilot, Claude Code) into the
+                mobile development lifecycle to streamline sprint delivery, refactoring, and unit test generation.</p>
 
-<section id="projects">
-<h2>Projects</h2>
+            <h3 style="margin: 32px 0 16px;">Key Achievements</h3>
+            <ul class="ach">
+                <li>Pioneered agentic AI workflows across engineering squads, reducing cycle times by 30% while raising
+                    automated unit test coverage.</li>
+                <li>Directed cross-functional squads (iOS, Android, Flutter, React Native), streamlining agile task
+                    allocation and timely sprint deliverables.</li>
+                <li>Architected offline-first synchronisation pipelines maintaining 100% data integrity under
+                    intermittent connectivity for mission-critical enterprise apps.</li>
+                <li>Scaled consumer products up to 400,000+ active learners across 15 languages, and led ride-hailing
+                    platforms with top App Store ratings (4.8+).</li>
+            </ul>
+        </section>
 
-<details class="proj" open><summary><h3>AMC Asset Mapping</h3><span class="sub">React Native developer · iOS and Android</span></summary><div class="pb">
-<div class="meta"><span>Sep 2025 – Ongoing</span><span>Team of 1</span><span>VSCode, Xcode 26</span></div>
-<ul class="pts"><li>Designed an asset management architecture on React Native and Realm that handles tens of thousands of local records with sub-second search.</li>
-<li>Used generative AI and computer vision to identify infrastructure automatically, cutting manual data entry by 45%.</li>
-<li>Delivered DGPS geotagging accurate to 30–35 cm and AI-driven predictive maintenance for utility, telecom and smart-city clients, on MEITY-approved cloud infrastructure.</li></ul>
-<ul class="tags"><li>React Native</li><li>React</li><li>Realm</li><li>Redux</li><li>Zustand</li></ul>
-<p class="lk"><a href="https://apps.apple.com/in/app/amc-asset-mapping/id6760654948">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.avanza.gis">Google Play</a></p></div></details>
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="tl">
+                <div class="job">
+                    <time>May 2025 – Present</time>
+                    <h3>Senior iOS Developer</h3>
+                    <p class="co">Silicon IT Hub Pvt. Ltd.</p>
+                    <ul class="pts">
+                        <li>Directing migration of enterprise mobile applications from monoliths to modular Swift and
+                            React Native micro-frontends.</li>
+                        <li>Integrated AI-assisted developer workflows (Cursor, LLM tooling) to increase unit test
+                            coverage and shorten delivery cycles by 30%.</li>
+                        <li>Developing cross-platform React Native modules with TypeScript, Redux, and
+                            AsyncStorage-backed offline sync.</li>
+                    </ul>
+                </div>
 
-<details class="proj" open><summary><h3>aaboRing</h3><span class="sub">iOS developer and team lead · wellness ring companion</span></summary><div class="pb">
-<div class="meta"><span>Oct 2024 – Jan 2025</span><span>Xcode 16</span></div>
-<ul class="pts"><li>Led the technical build of a real-time wellness app and solved BLE connectivity problems to keep background sync running between the ring and the phone.</li>
-<li>Built a privacy-first MVVM and HealthKit data layer with encrypted local storage.</li>
-<li>Delivered sleep staging with a Sleep Score, stress monitoring with a Readiness Score, and on-demand heart rate, SpO2 and temperature, in 8 languages.</li></ul>
-<ul class="tags"><li>Swift</li><li>MVVM</li><li>BLE</li><li>NexRing SDK</li><li>HealthKit</li><li>Core Data</li></ul>
-<p class="lk"><a href="https://apps.apple.com/in/app/aaboring/id6450259506">App Store</a></p></div></details>
+                <div class="job">
+                    <time>Oct 2024 – Mar 2025</time>
+                    <h3>Mobile App Team Lead</h3>
+                    <p class="co">Youngbrainz Infotech</p>
+                    <ul class="pts">
+                        <li>Led team of 8–12 mobile engineers across sprint planning, code review standards, and CI/CD
+                            releases.</li>
+                        <li>Architected iOS apps using Swift and VIPER/Clean Architecture, and built custom bridge
+                            modules for React Native.</li>
+                        <li>Engineered BLE peripheral connectivity, in-app purchases, and performance profiling via
+                            Xcode Instruments.</li>
+                    </ul>
+                </div>
 
-<details class="proj" open><summary><h3>CamCrusher</h3><span class="sub">Senior iOS developer · GPS camera alerts</span></summary><div class="pb">
-<ul class="pts"><li>Built a GPS camera-trap defense app in Swift and MVVM, with external BLE hardware and TomTom data (also used by Hyundai, Renault and Stellantis) for alerts on fixed, mobile, red-light and average-speed cameras.</li>
-<li>Implemented patent-pending Bluetooth-disconnect battery optimization, direction-aware alert filtering, shareable personalized alerts and a subscription model.</li></ul>
-<ul class="tags"><li>Swift</li><li>MVVM</li><li>BLE</li><li>Subscriptions</li></ul>
-<p class="lk"><a href="https://apps.apple.com/in/app/camcrusher/id1599753417">App Store</a></p></div></details>
+                <div class="job">
+                    <time>Apr 2024 – Sep 2024</time>
+                    <h3>Senior iOS Developer</h3>
+                    <p class="co">IOTTIVE OPC Pvt. Ltd.</p>
+                    <ul class="pts">
+                        <li>Engineered CoreBluetooth communication layers for wearable IoT devices, including packet
+                            fragmentation, CRC validation, and auto-reconnection logic.</li>
+                        <li>Delivered modular VIPER architecture to stabilize multi-tenant releases.</li>
+                    </ul>
+                </div>
 
-<details class="proj" open><summary><h3>Clubify</h3><span class="sub">Senior iOS developer · creator community platform</span></summary><div class="pb">
-<div class="meta"><span>Apr 2023</span><span>Team of 2</span><span>Xcode 15</span></div>
-<ul class="pts"><li>Built a platform that lets creators launch a branded app and community in a day, with 3 white-label variants, different home feeds and social/e-commerce content models.</li>
-<li>Implemented an in-app coin wallet and Agora video calling so creators can sell subscriptions and exclusive content while owning their audience.</li></ul>
-<ul class="tags"><li>Swift</li><li>MVVM</li><li>Agora SDK</li><li>Mixpanel</li></ul>
-<p class="lk"><a href="https://apps.apple.com/in/app/clubify-your-app-community/id882297946">App Store</a></p></div></details>
+                <div class="job">
+                    <time>Sep 2021 – Mar 2024</time>
+                    <h3>Senior iOS Developer</h3>
+                    <p class="co">Brightforce Technologies (formerly Plutus Technologies)</p>
+                    <ul class="pts">
+                        <li>Scaled a multi-brand white-label platform using Core Data background context merging and
+                            robust offline sync.</li>
+                        <li>Managed TestFlight distribution and production App Store submissions.</li>
+                    </ul>
+                </div>
 
-<details class="proj" open><summary><h3>Offsight</h3><span class="sub">Senior iOS developer · offsite construction</span></summary><div class="pb">
-<div class="meta"><span>Sep 2021</span><span>Team of 2</span><span>Xcode 15</span></div>
-<ul class="pts"><li>Built software for delivery, quality, traceability and communication in modular construction, connecting project managers, inspectors and contractors with assembly tracking, annotated photo sign-offs and delivery alerts.</li>
-<li>Replaced paper quality checklists with digital task forms and a live dashboard of factory orders. Rated 5.0 on the App Store.</li></ul>
-<ul class="tags"><li>Swift</li><li>MVVM</li><li>Offline-first</li></ul>
-<p class="lk"><a href="https://apps.apple.com/us/app/offsight/id1522830069">App Store</a></p></div></details>
+                <div class="job">
+                    <time>Sep 2016 – Aug 2021</time>
+                    <h3>iOS Developer</h3>
+                    <p class="co">Stalwart IT Solution</p>
+                    <ul class="pts">
+                        <li>Designed the initial foundation for a white-label community platform with dynamic runtime
+                            branding and offline-first capabilities.</li>
+                        <li>Mentored junior developers through peer reviews and onboarding plans.</li>
+                    </ul>
+                </div>
 
-<details class="proj" open><summary><h3>NKENNE: Learn African Languages</h3><span class="sub">Senior iOS developer · language learning</span></summary><div class="pb">
-<div class="meta"><span>Nov 2023</span><span>Team of 1</span><span>Xcode 15.1</span></div>
-<ul class="pts"><li>Built the app for a community that has grown to 400,000+ learners across 15 languages, including Igbo, Yoruba, Swahili, Somali, Hausa, Twi, Zulu and Amharic, with synchronized lesson caption playback.</li>
-<li>Laid the native iOS foundation that the platform later extended with AI pronunciation coaching and live tutoring.</li></ul>
-<ul class="tags"><li>Swift</li><li>REST API</li></ul>
-<p class="lk"><a href="https://apps.apple.com/us/app/nkenne-learn-african-language/id1587537473">App Store</a></p></div></details>
+                <div class="job">
+                    <time>Jan 2015 – Aug 2016</time>
+                    <h3>Junior iOS Developer</h3>
+                    <p class="co">iMOBDEV Technologies Pvt. Ltd.</p>
+                    <ul class="pts">
+                        <li>Built foundational native iOS applications using Objective-C and Swift with responsive
+                            layouts across device form factors.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-<details class="proj" open><summary><h3>RideRove</h3><span class="sub">iOS developer · ride-hailing, Kuwait</span></summary><div class="pb">
-<div class="meta"><span>Jun 2021 – Aug 2022</span><span>Team of 2</span></div>
-<ul class="pts"><li>Built a luxury ride-hailing app with upfront fare estimates, professional driver matching and 24/7 availability.</li>
-<li>Delivered live GPS ride tracking and payments by cash, card, KNET, Apple Pay, Google Pay and in-app wallet. Rated 4.8 across 5,500+ reviews.</li></ul>
-<ul class="tags"><li>Objective-C</li><li>MVC</li><li>Google Maps</li><li>Location Services</li><li>REST API</li></ul>
-<p class="lk"><a href="https://apps.apple.com/us/app/riderove/id1456118203">App Store</a></p></div></details>
+        <section id="projects">
+            <h2>Featured Projects</h2>
 
-<details class="proj" open><summary><h3>Tamata</h3><span class="sub">iOS developer · e-commerce, Iraq</span></summary><div class="pb">
-<div class="meta"><span>Mar 2021 – Sep 2021</span><span>Team of 1</span><span>Xcode 14.2</span></div>
-<ul class="pts"><li>Built an e-commerce app for the Iraqi market with multiple payment options and a reliable delivery flow.</li>
-<li>Implemented full LTR/RTL layouts with English and Arabic localization.</li></ul>
-<ul class="tags"><li>Swift</li><li>MVVM</li><li>Stripe</li><li>i18n</li></ul></div></details>
-</section>
+            <details class="proj" open>
+                <summary>
+                    <h3>AMC Asset Mapping</h3><span class="sub">React Native Developer · iOS &amp; Android</span>
+                </summary>
+                <div class="pb">
+                    <div class="meta"><span>Sep 2025 – Present</span><span>Sole Developer</span><span>VS Code,
+                            Xcode</span></div>
+                    <ul class="pts">
+                        <li>Designed high-performance asset mapping architecture handling tens of thousands of local
+                            records via Realm with sub-second queries.</li>
+                        <li>Integrated computer vision models to automate infrastructure recognition, reducing manual
+                            inputs by 45%.</li>
+                        <li>Integrated DGPS geotagging accurate to 30–35 cm alongside AI-based predictive maintenance
+                            tracking.</li>
+                    </ul>
+                    <ul class="tags">
+                        <li>React Native</li>
+                        <li>Realm</li>
+                        <li>Redux</li>
+                        <li>Zustand</li>
+                        <li>DGPS</li>
+                    </ul>
+                    <p class="lk">
+                        <a href="https://apps.apple.com/in/app/amc-asset-mapping/id6760654948" target="_blank"
+                            rel="noopener noreferrer">App Store</a> ·
+                        <a href="https://play.google.com/store/apps/details?id=com.avanza.gis" target="_blank"
+                            rel="noopener noreferrer">Google Play</a>
+                    </p>
+                </div>
+            </details>
 
-<section id="skills">
-<h2>Skills</h2>
-<div class="skills">
-<div class="sk"><h3>iOS development</h3><p>Swift, SwiftUI, UIKit, Combine, RxSwift, Objective-C, Swift Concurrency, GCD, ARC and memory management, Codable</p></div>
-<div class="sk"><h3>Apple frameworks</h3><p>ARKit, Core ML, HealthKit, CoreBluetooth, WidgetKit, App Clips, Live Activities, MapKit, StoreKit, Human Interface Guidelines</p></div>
-<div class="sk"><h3>React Native</h3><p>React Native, React.js, TypeScript, React Hooks</p></div>
-<div class="sk"><h3>Agentic AI tools</h3><p>Cursor AI, Kiro, GitHub Copilot, Amazon Q Developer, Claude Code, prompt engineering, LLM-assisted development</p></div>
-<div class="sk"><h3>Architecture</h3><p>MVVM, VIPER, MVC, Clean Architecture, modular design, SOLID, dependency injection, reactive programming</p></div>
-<div class="sk"><h3>State and data</h3><p>Redux, Zustand, Realm, Core Data, Firebase</p></div>
-<div class="sk"><h3>Integrations</h3><p>REST APIs, BLE, Agora SDK, RevenueCat, Stripe, Google Maps, Keychain, Face ID/Touch ID, push notifications</p></div>
-<div class="sk"><h3>Testing and quality</h3><p>XCTest, TDD, UI testing, Instruments, Crashlytics, accessibility (VoiceOver)</p></div>
-<div class="sk"><h3>DevOps and release</h3><p>Xcode Cloud, Fastlane, Bitrise, Jenkins, Git, code reviews, App Store Connect, TestFlight, ASO</p></div>
-<div class="sk"><h3>Packages and tooling</h3><p>Swift Package Manager, CocoaPods, Carthage, SwiftLint, Jira, Trello, Asana, Postman</p></div>
-<div class="sk"><h3>Localization</h3><p>i18n, RTL/LTR layouts, multi-language releases</p></div>
-<div class="sk"><h3>Leadership</h3><p>Agile (Scrum/Kanban), mentoring, sprint planning, technical roadmaps, code quality governance, hiring, client and vendor management, global teams across India, the Middle East, the US and Africa</p></div>
-</div>
-</section>
+            <details class="proj" open>
+                <summary>
+                    <h3>aaboRing</h3><span class="sub">iOS Developer &amp; Team Lead · Health &amp; Wearables</span>
+                </summary>
+                <div class="pb">
+                    <div class="meta"><span>Oct 2024 – Jan 2025</span><span>Xcode</span></div>
+                    <ul class="pts">
+                        <li>Architected background BLE syncing protocols between smart hardware and iOS devices with
+                            automated reconnection.</li>
+                        <li>Constructed an encrypted local data layer adhering to MVVM and Apple HealthKit privacy
+                            guidelines.</li>
+                        <li>Delivered sleep analytics, SpO2 monitoring, and temperature indicators localized in 8
+                            languages.</li>
+                    </ul>
+                    <ul class="tags">
+                        <li>Swift</li>
+                        <li>CoreBluetooth</li>
+                        <li>HealthKit</li>
+                        <li>MVVM</li>
+                        <li>Core Data</li>
+                    </ul>
+                    <p class="lk"><a href="https://apps.apple.com/in/app/aaboring/id6450259506" target="_blank"
+                            rel="noopener noreferrer">App Store</a></p>
+                </div>
+            </details>
 
-<section id="education">
-<h2>Education and certifications</h2>
-<div class="two">
-<div><h3>Education</h3>
-<ul class="pts"><li><b>MCA</b>, Atmiya Institute of Technology &amp; Science (GTU), 2012 – 2015</li><li><b>BCA</b>, Smt. K.B. Parekh College (MKBU), 2009 – 2012</li></ul></div>
-<div><h3>Certifications</h3>
-<ul class="pts"><li>Agile Project Management with Microsoft Project, Project Management Institute, Mar 2024</li><li>Master iOS Auto Layout (Swift/Xcode), Udemy, Jan 2022</li></ul></div>
-</div>
-</section>
+            <details class="proj">
+                <summary>
+                    <h3>CamCrusher</h3><span class="sub">Senior iOS Developer · Navigation &amp; Alerts</span>
+                </summary>
+                <div class="pb">
+                    <ul class="pts">
+                        <li>Built real-time speed trap and alert system connecting external BLE hardware with TomTom
+                            navigation telemetry.</li>
+                        <li>Implemented battery-saving BLE disconnect handlers and directional alert filtering
+                            algorithms.</li>
+                    </ul>
+                    <ul class="tags">
+                        <li>Swift</li>
+                        <li>CoreBluetooth</li>
+                        <li>TomTom SDK</li>
+                        <li>In-App Subscriptions</li>
+                    </ul>
+                    <p class="lk"><a href="https://apps.apple.com/in/app/camcrusher/id1599753417" target="_blank"
+                            rel="noopener noreferrer">App Store</a></p>
+                </div>
+            </details>
 
-<section id="contact" class="big">
-<h2>Contact</h2>
-<p>I'm open to senior iOS and mobile lead roles. Get in touch:</p>
-<p><a href="mailto:kevalunchadiya92@gmail.com">kevalunchadiya92@gmail.com</a></p>
-<p><a href="https://github.com/kevalgajjar111">GitHub</a> · <a href="https://linkedin.com/in/keval-gajjar">LinkedIn</a></p>
-</section>
-</main>
-<footer><div style="max-width:1000px;margin:0 auto;padding:0 24px">© <span id="y"></span> Keval Gajjar · Ahmedabad, India</div></footer>
-<script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+            <details class="proj">
+                <summary>
+                    <h3>Clubify</h3><span class="sub">Senior iOS Developer · Creator Community</span>
+                </summary>
+                <div class="pb">
+                    <div class="meta"><span>Apr 2023</span><span>Team of 2</span></div>
+                    <ul class="pts">
+                        <li>Engineered multi-tenant white-label framework enabling rapid rebranding and dedicated feed
+                            customization.</li>
+                        <li>Integrated Agora video calling and digital coin wallets for community tipping and live
+                            events.</li>
+                    </ul>
+                    <ul class="tags">
+                        <li>Swift</li>
+                        <li>MVVM</li>
+                        <li>Agora SDK</li>
+                        <li>StoreKit</li>
+                    </ul>
+                    <p class="lk"><a href="https://apps.apple.com/in/app/clubify-your-app-community/id882297946"
+                            target="_blank" rel="noopener noreferrer">App Store</a></p>
+                </div>
+            </details>
+
+            <details class="proj">
+                <summary>
+                    <h3>Offsight</h3><span class="sub">Senior iOS Developer · Enterprise Construction</span>
+                </summary>
+                <div class="pb">
+                    <div class="meta"><span>Sep 2021</span><span>Team of 2</span></div>
+                    <ul class="pts">
+                        <li>Developed modular tracking and sign-off checklists for construction inspectors with full
+                            offline caching.</li>
+                        <li>Achieved 5.0 App Store user rating for usability and field reliability.</li>
+                    </ul>
+                    <ul class="tags">
+                        <li>Swift</li>
+                        <li>Clean Architecture</li>
+                        <li>Offline-First Sync</li>
+                    </ul>
+                    <p class="lk"><a href="https://apps.apple.com/us/app/offsight/id1522830069" target="_blank"
+                            rel="noopener noreferrer">App Store</a></p>
+                </div>
+            </details>
+
+            <details class="proj">
+                <summary>
+                    <h3>NKENNE: Learn African Languages</h3><span class="sub">Senior iOS Developer · EdTech</span>
+                </summary>
+                <div class="pb">
+                    <div class="meta"><span>Nov 2023</span><span>Sole iOS Engineer</span></div>
+                    <ul class="pts">
+                        <li>Developed educational app scaling to 400,000+ users across 15 regional languages.</li>
+                        <li>Engineered real-time synchronized lesson playback and conversational audio workflows.</li>
+                    </ul>
+                    <ul class="tags">
+                        <li>Swift</li>
+                        <li>AVFoundation</li>
+                        <li>REST APIs</li>
+                    </ul>
+                    <p class="lk"><a href="https://apps.apple.com/us/app/nkenne-learn-african-language/id1587537473"
+                            target="_blank" rel="noopener noreferrer">App Store</a></p>
+                </div>
+            </details>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="sk">
+                    <h3>iOS Native</h3>
+                    <p>Swift, SwiftUI, UIKit, Combine, Objective-C, Swift Concurrency, ARC, Instruments, Codable</p>
+                </div>
+                <div class="sk">
+                    <h3>Apple Frameworks</h3>
+                    <p>HealthKit, CoreBluetooth, WidgetKit, StoreKit, Core ML, App Clips, MapKit, AVFoundation</p>
+                </div>
+                <div class="sk">
+                    <h3>Cross-Platform</h3>
+                    <p>React Native, React.js, TypeScript, React Hooks, Native Bridges</p>
+                </div>
+                <div class="sk">
+                    <h3>AI Tooling</h3>
+                    <p>Cursor, GitHub Copilot, Claude Code, prompt engineering, automated test generation</p>
+                </div>
+                <div class="sk">
+                    <h3>Architecture</h3>
+                    <p>MVVM, VIPER, Clean Architecture, SOLID, Dependency Injection, Offline-First</p>
+                </div>
+                <div class="sk">
+                    <h3>Data &amp; State</h3>
+                    <p>Core Data, Realm, Redux, Zustand, Firebase</p>
+                </div>
+                <div class="sk">
+                    <h3>Testing &amp; CI/CD</h3>
+                    <p>XCTest, TDD, Xcode Cloud, Fastlane, TestFlight, App Store Connect</p>
+                </div>
+                <div class="sk">
+                    <h3>Leadership</h3>
+                    <p>Agile / Scrum, technical hiring, sprint planning, architectural roadmapping, mentoring</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education &amp; Certifications</h2>
+            <div class="two">
+                <div>
+                    <h3>Education</h3>
+                    <ul class="pts">
+                        <li><b>MCA</b> — Atmiya Institute of Technology &amp; Science (GTU), 2012 – 2015</li>
+                        <li><b>BCA</b> — Smt. K.B. Parekh College (MKBU), 2009 – 2012</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Certifications</h3>
+                    <ul class="pts">
+                        <li>Agile Project Management with Microsoft Project — PMI, Mar 2024</li>
+                        <li>Master iOS Auto Layout (Swift/Xcode) — Udemy, Jan 2022</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="big">
+            <h2>Contact</h2>
+            <p>Open to senior iOS and mobile engineering leadership roles.</p>
+            <p><a href="mailto:kevalunchadiya92@gmail.com">kevalunchadiya92@gmail.com</a></p>
+            <p><a href="https://github.com/kevalgajjar111" target="_blank" rel="noopener noreferrer">GitHub</a> · <a
+                    href="https://linkedin.com/in/keval-gajjar" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div style="max-width: 1000px; margin: 0 auto; padding: 0 24px;">
+            © <span id="y"></span> Keval Gajjar · Ahmedabad, India
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
 </body>
+
 </html>
